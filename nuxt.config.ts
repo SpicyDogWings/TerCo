@@ -11,6 +11,9 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
   ],
   ssr: false,
+  fonts: {
+    provider: "fontshare",
+  },
   vite: { plugins: [tailwindcss()] },
   css: ["~/assets/css/main.css"],
 });
