@@ -10,10 +10,9 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@pinia/nuxt",
   ],
-  ssr: false,
+  vite: { plugins: [tailwindcss()] },
+  css: ["~/assets/css/main.css"],
   fonts: {
     provider: "fontshare",
   },
-  vite: { plugins: [tailwindcss()] },
-  css: ["~/assets/css/main.css"],
 });
